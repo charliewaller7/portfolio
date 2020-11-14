@@ -14,7 +14,7 @@ class Typer extends Component {
       text: '',
       isDeleting: false,
       loopNum: 0,
-      typingSpeed: 150
+      typingSpeed: 75
     }
   }
 
@@ -30,7 +30,7 @@ class Typer extends Component {
 
     this.setState({
       text: isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1),
-      typingSpeed: isDeleting ? 30 : 150
+      typingSpeed: isDeleting ? 30 : 75
     });
 
     if (!isDeleting && text === fullText) {
@@ -39,7 +39,7 @@ class Typer extends Component {
         return
       }
       
-      setTimeout(() => this.setState({ isDeleting: true }), 500);
+      setTimeout(() => this.setState({ isDeleting: true }), 250);
       
     } else if (isDeleting && text === '') {
       
