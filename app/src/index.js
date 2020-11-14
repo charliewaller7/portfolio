@@ -150,7 +150,5 @@ function calculateWinner(squares) {
   
   ReactDOM.render(
     <Game />,
-    // <ShoppingList name="Hello"/>,
     document.getElementById('root')
   );
-  
