@@ -6,7 +6,6 @@ class Typer extends Component {
 
   static defaultProps = {
     dataText: [],
-    showHistory: true,
   }
 
   constructor(props) {
@@ -57,9 +56,10 @@ class Typer extends Component {
 
   render() {    
     return (
-      <Aux>
-      <span> {this.state.text} &nbsp; </span>
-      </Aux>
+      <span 
+        className={this.props.className ? this.props.className : ""}> 
+        {this.state.text} &nbsp; 
+        </span>
     );
   }
 }
