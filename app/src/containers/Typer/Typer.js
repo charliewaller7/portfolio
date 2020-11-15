@@ -1,20 +1,25 @@
 import React, { Component } from 'react';
+import Aux from '../../hoc/Aux'
 
 
 class Typer extends Component {
 
   static defaultProps = {
-    dataText: []
+    dataText: [],
+    showHistory: true,
   }
 
   constructor(props) {
     super(props);
 
+    const { dataText } = this.props;
+    this.dataText = dataText
+
     this.state = {
       text: '',
       isDeleting: false,
       loopNum: 0,
-      typingSpeed: 75
+      typingSpeed: 75,
     }
   }
 
@@ -23,10 +28,9 @@ class Typer extends Component {
   }
 
   handleType = () => {
-    const { dataText } = this.props;
-    const { isDeleting, loopNum, text, typingSpeed } = this.state;
-    const i = loopNum % dataText.length;
-    const fullText = dataText[i];
+    const { isDeleting, loopNum, text, typingSpeed, } = this.state;
+    const i = loopNum % this.dataText.length;
+    const fullText = this.dataText[i];
 
     this.setState({
       text: isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1),
@@ -35,28 +39,28 @@ class Typer extends Component {
 
     if (!isDeleting && text === fullText) {
 
-      if (loopNum >= dataText.length - 1) {
+      if (loopNum >= this.dataText.length - 1) {
         return
       }
       
       setTimeout(() => this.setState({ isDeleting: true }), 250);
       
     } else if (isDeleting && text === '') {
-      
+
       this.setState({
         isDeleting: false,
         loopNum: loopNum + 1
       });
-      
     }
     setTimeout(this.handleType, typingSpeed);
   };
 
   render() {    
     return (
-      <span>{ this.state.text }&nbsp;</span>
+      <Aux>
+      <span> {this.state.text} &nbsp; </span>
+      </Aux>
     );
-    
   }
 }
 

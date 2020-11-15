@@ -8,9 +8,8 @@ const home = props => {
   return (
     <Aux>
       <div className={classes.Heading}>
-      <Typer dataText={["Welcome", "Charlie Waller Portfolio"]}/>
+      <Typer dataText={["Welcome...", "Charlie Waller Portfolio", "Scroll..."]}/>
       </div>
-      <p className={classes.Subheading}> Hello !! </p>
     </Aux>
   )
 }
