@@ -1,0 +1,5 @@
+/* Shared CSS styles across Components */
+
+.Clickable {
+  cursor: pointer;
+}
