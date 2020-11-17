@@ -15,6 +15,10 @@
   display: block;
 }
 
+.Item a img{
+  height: 100%;
+}
+
 .Item a:hover,
 .Item a:active,
 .Item a.active {

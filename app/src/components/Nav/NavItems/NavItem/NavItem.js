@@ -2,9 +2,11 @@ import React from 'react';
 import classes from './NavItem.module.css'
 
 
-const navItem = () => (
+const navItem = props => (
   <li className={classes.Item}>
-    <a href="/">GitHub</a>
+    <a href={props.href}>
+      <img src={props.src} alt={props.alt} height="100%"></img>
+    </a>
   </li>
 );
 
