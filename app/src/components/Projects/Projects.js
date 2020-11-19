@@ -1,5 +1,6 @@
 import React from 'react';
 import classes from './Projects.module.css'
+import ProjectCarousel from './ProjectCarousel/ProjectCarousel'
 
 const projects = props => {
 
@@ -8,6 +9,7 @@ const projects = props => {
       className={classes.ProjectsSection} 
       ref={props.projectSectionRef}>
       <p className={classes.Heading}>Projects</p>
+      <ProjectCarousel/>
       </div>
   )
 }

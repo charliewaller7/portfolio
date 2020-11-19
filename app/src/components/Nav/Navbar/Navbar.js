@@ -4,7 +4,7 @@ import NavItems from '../NavItems/NavItems'
 
 
 const navbar = props => (
-  <header className={classes.Toolbar}>
+  <header className={`${classes.Toolbar} ${props.navBackground ? classes.withBackground : null}`}>
     <div>🍔</div>
     <nav>
       <NavItems/>
