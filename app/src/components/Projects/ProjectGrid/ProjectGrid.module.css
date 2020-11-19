@@ -1,0 +1,13 @@
+.GridWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10vh 0
+}
+
+.GridArea {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}

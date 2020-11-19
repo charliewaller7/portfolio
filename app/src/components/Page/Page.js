@@ -13,33 +13,34 @@ class Page extends Component {
     super(props)
     this.projectSectionRef = React.createRef()
     this.state = {
-      navBackground: false
+      navBackground: false,
+      navTitle: ""
     }
   }
-
-
 
   componentDidMount() {
     this.projectsListener = document.addEventListener("scroll", e => {
 
       // Get scroll value from projects section
       // and current position
-      var projectOffset = document.querySelector('[class*=ProjectCarousel_Carousel]').offsetTop
+      var projectOffset = document.querySelector('[class*=ProjectGrid]').offsetTop
       var scrolled = document.scrollingElement.scrollTop;
   
       // Check if user is scrolled past point
-      this.setState({navBackground: scrolled >= projectOffset})
+      this.setState({
+        navBackground: scrolled >= projectOffset,
+        navTitle: scrolled >= projectOffset ? "Projects" : ""
+      })
       });
   };
 
   render() {
     return (
     <Aux>
-      <Navbar navBackground={this.state.navBackground}/>
+      <Navbar navBackground={this.state.navBackground}>{this.state.navTitle}</Navbar>
       <main className={classes.Content}>
         <Home projectSectionRef={this.projectSectionRef}/>
-        <p>{this.state.navBackground ? "Yes" : "No"}</p>
-        <Projects projectSectionRef={this.projectSectionRef} id="projects"/>
+        <Projects projectSectionRef={this.projectSectionRef}/>
       </main>
     </Aux>
     );

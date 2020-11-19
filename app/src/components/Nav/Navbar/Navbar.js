@@ -4,11 +4,15 @@ import NavItems from '../NavItems/NavItems'
 
 
 const navbar = props => (
-  <header className={`${classes.Toolbar} ${props.navBackground ? classes.withBackground : null}`}>
-    <div>🍔</div>
-    <nav>
-      <NavItems/>
-    </nav>
+  <header className={classes.Toolbar}>
+    <p className={classes.navTitle}>{props.children}</p>
+    <div className={`${classes.Toolbar} ${props.navBackground ? classes.navBackground : null}`}>
+      <div>🍔</div>
+      
+      <nav>
+        <NavItems/>
+      </nav>
+    </div>
   </header>
 );
 

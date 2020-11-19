@@ -1,7 +1,14 @@
+.ProjectItemWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .ProjectItem {
   text-align: center;
+  width: 60%;
 }
 
 .ProjectItem img {
-  max-width: 95%;
+  max-width: 50%;
 }

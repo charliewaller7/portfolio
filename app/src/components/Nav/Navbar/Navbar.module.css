@@ -1,5 +1,5 @@
 .Toolbar {
-  height: 56px;
+  height: 60px;
   width: 100%;
   position: fixed;
   top: 0;
@@ -12,11 +12,42 @@
   z-index: 90;
 }
 
-.withBackground {
-  background-color: white;
-}
-
-
 .Toolbar nav {
   height: 100%
 }
+
+.navBackground {
+  background-color: white;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+.navTitle {
+  font-size: 2rem;
+  text-align: center;
+  color: #ff6652;
+  width: 50%;
+  margin: auto;
+  justify-content: center;
+  display: flex;
+  z-index: 91;
+}
+
+/* 
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.navBackground {
+  opacity: 0;
+  -webkit-animation: fadein 0.5s 1 ease-out;
+  animation: fadein 0.5s 1 ease-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  background-color: white;
+} */

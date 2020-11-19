@@ -1,0 +1,8 @@
+.GridItem {
+  width: 30%;
+  margin: 1em 0;
+}
+
+.GridItem img {
+  width: 100%;
+}
