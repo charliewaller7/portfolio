@@ -21,12 +21,6 @@ class ProjectGrid extends Component {
           <ProjectGridItem/>
           <ProjectGridItem/>
           <ProjectGridItem/>
-          <ProjectGridItem/>
-          <ProjectGridItem/>
-          <ProjectGridItem/>
-          <ProjectGridItem/>
-          <ProjectGridItem/>
-          <ProjectGridItem/>
         </div>
       </div>
     );
