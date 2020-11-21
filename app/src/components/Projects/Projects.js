@@ -10,7 +10,7 @@ const projects = props => {
         <p className={classes.Heading}>Projects</p>
         <p className={classes.Subheading}> A collection of personal data science & software development projects</p>
           <ProjectGrid/>
-          <div className={classes.PageBreak}/>
+          <div className={classes.PageBreak}></div>
           <ProjectItem/>
       </div>
   )

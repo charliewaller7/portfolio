@@ -13,6 +13,12 @@ class ProjectGrid extends Component {
     }
   }
 
+  executeScroll = ref => {
+    ref.current.scrollIntoView(
+      {behavior: "smooth"}
+    ) 
+  }
+
   render () {
     return (
       <div className={classes.GridWrapper}>

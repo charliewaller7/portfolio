@@ -8,7 +8,7 @@ const Tags = props => {
   return (
     <div className={classes.Tags}>
     {tags.map((tag) => 
-      <span># {tag}</span>
+      <div className={classes.Tag}># {tag}</div>
     )}
     </div>
   );

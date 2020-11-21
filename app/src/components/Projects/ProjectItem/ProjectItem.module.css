@@ -5,10 +5,38 @@
 }
 
 .ProjectItem {
-  text-align: center;
+  text-align: left;
   width: 60%;
+  min-width: 300px;
+  line-height: 150%;
+}
+
+.Center {
+  text-align: center !important;
+}
+
+.Heading {
+  color: #ff6652;
+  font-size: 2rem;
 }
 
 .ProjectItem img {
   max-width: 50%;
+}
+
+.Highlighted {
+  background-color: #ff6652;
+  color: white;
+  padding: .2em .3em;
+  font-weight: bold;
+}
+
+.Link {
+  color: #ff6652;
+  font-weight: bold;
+}
+
+.Video video {
+  width: 50%;
+  min-width: 300px;
 }
