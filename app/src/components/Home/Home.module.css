@@ -27,8 +27,8 @@
 
 .FadeIn {
   opacity: 0;
-  -webkit-animation: fadein 3s 1 3s;
-  animation: fadein 3s 1 3s;
+  -webkit-animation: fadein 1s 1 3s;
+  animation: fadein 1s 1 3s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }

@@ -1,19 +1,18 @@
 import React from 'react';
 import classes from './ProjectItem.module.css'
-
 import graphImage from '../../../assets/images/projects/tcv_1.png'
+
+import Tags from './../Icons/Tags'
+
 
 const projectItem = () => (
   <div className={classes.ProjectItemWrapper}>
     <div className={classes.ProjectItem}>
       <h1> The Classic Valuer </h1>
-      <p>Links and logos</p>
+      <Tags>
+      Python|Web Scraping|Docker|NoSQL|AWS
+      </Tags>
       <img src={graphImage} alt="The Classic Valuer"></img>
-      <ul>
-        <li>Python: Scrapy, Selenium, OOP</li>
-        <li>Docker</li>
-        <li>AWS: NoSQL</li>
-      </ul>
       <p>
         The Classic Valuer is an auction aggregator for classic car lovers. 
         We collate historic price data for classic cars, aggregate and analyse

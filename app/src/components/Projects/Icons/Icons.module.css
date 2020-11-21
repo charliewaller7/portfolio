@@ -1,0 +1,9 @@
+.Tags {
+  margin: 1em 0;
+}
+.Tags span{
+  padding: .2em .3em;
+  background-color: lightgrey;
+  border-radius: .5pc;
+  margin: .2em;
+}

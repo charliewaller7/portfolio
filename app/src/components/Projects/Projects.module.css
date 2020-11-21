@@ -21,3 +21,10 @@
 .Subheading {
   text-align: center;
 }
+
+.PageBreak {
+  /* background-color: #ff6652; */
+  background-color: #f2f5f0;
+  height: 4em;
+  margin-bottom: 4em;
+}

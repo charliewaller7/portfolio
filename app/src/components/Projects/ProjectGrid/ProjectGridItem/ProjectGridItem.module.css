@@ -8,10 +8,12 @@
   overflow: hidden;
   min-height: 200px;
   vertical-align: middle;
+  cursor: pointer;
 }
 
 .GridItem:hover {
-  background-color: #ff6652;
+  background-color: rgb(255, 102, 82);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,.5);
 }
 
 .GridItem img {

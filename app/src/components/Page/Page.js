@@ -23,7 +23,7 @@ class Page extends Component {
 
       // Get scroll value from projects section
       // and current position
-      var projectOffset = document.querySelector('[class*=ProjectGrid]').offsetTop
+      var projectOffset = document.querySelector('[class*=Projects_Subheading]').offsetTop
       var scrolled = document.scrollingElement.scrollTop;
   
       // Check if user is scrolled past point

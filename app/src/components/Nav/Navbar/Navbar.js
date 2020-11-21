@@ -7,8 +7,7 @@ const navbar = props => (
   <header className={classes.Toolbar}>
     <p className={classes.navTitle}>{props.children}</p>
     <div className={`${classes.Toolbar} ${props.navBackground ? classes.navBackground : null}`}>
-      <div>🍔</div>
-      
+      <div>{/* Sidebar placeholder */}</div>
       <nav>
         <NavItems/>
       </nav>
