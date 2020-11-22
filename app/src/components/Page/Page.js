@@ -11,7 +11,6 @@ class Page extends Component {
 
   constructor(props) {
     super(props)
-    this.projectSectionRef = React.createRef()
     this.state = {
       navBackground: false,
       navTitle: ""
@@ -39,8 +38,8 @@ class Page extends Component {
     <Aux>
       <Navbar navBackground={this.state.navBackground}>{this.state.navTitle}</Navbar>
       <main className={classes.Content}>
-        <Home projectSectionRef={this.projectSectionRef}/>
-        <Projects projectSectionRef={this.projectSectionRef}/>
+        <Home/>
+        <Projects/>
       </main>
     </Aux>
     );

@@ -1,14 +1,14 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import classes from './Home.module.css'
 import projectClasses from '../../App.module.css'
 
 import Aux from '../../hoc/Aux'
 import Typer from '../../containers/Typer/Typer'
 
-const Home = props => {
+const Home = () => {
 
   const executeScroll = () => {
-    props.projectSectionRef.current.scrollIntoView(
+    document.querySelector("#projectGridScroll").scrollIntoView(
       {behavior: "smooth"}
     ) 
   }
@@ -22,11 +22,8 @@ const Home = props => {
         />
         <div>
         <p 
-        className={
-          `${classes.Subheading} ${classes.FadeIn} ${projectClasses.Clickable}`
-          }
-        onClick={executeScroll}>
-        projects
+        className={`${classes.Subheading} ${classes.FadeIn} ${projectClasses.Clickable}`}
+        onClick={executeScroll}> projects
         </p>
         </div>
       </div>
