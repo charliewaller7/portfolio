@@ -8,11 +8,6 @@ const ProjectGrid = () => (
   <div className={classes.GridWrapper}>
   <div className={classes.GridArea}>
     <ProjectGridItem src={tcvImage} name="The Classic Valuer"/>
-    <ProjectGridItem src={tcvImage} name="The Classic Valuer"/>
-    <ProjectGridItem src={tcvImage} name="The Classic Valuer"/>
-    <ProjectGridItem src={tcvImage} name="The Classic Valuer"/>
-    <ProjectGridItem src={tcvImage} name="The Classic Valuer"/>
-    <ProjectGridItem src={tcvImage} name="The Classic Valuer"/>
   </div>
 </div>
 );

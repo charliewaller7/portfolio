@@ -2,6 +2,7 @@ import React from 'react';
 import classes from './ProjectItem.module.css'
 import WebIcon from '../Icons/WebIcon'
 import Tags from '../Icons/Tags'
+import tcvImage from '../../../assets/images/projects/tcv_1.png'
 
 const ProjectTheClassicValuer = () => (
   <div className={classes.ProjectItemWrapper}>
@@ -24,9 +25,11 @@ const ProjectTheClassicValuer = () => (
         and provide insight to users.
         </p>
         <div className={`${classes.Video} ${classes.Center}`}>
-        <video width="480" height="320" controls="controls">
-          <source src="https://video.wixstatic.com/video/115a18_b24900d1781549798e883576e65fd471/1080p/mp4/file.mp4" 
-          type="video/mp4"/>
+        <video width="480" height="320" controls="controls" poster={tcvImage}>
+          <source 
+          src="https://video.wixstatic.com/video/115a18_b24900d1781549798e883576e65fd471/1080p/mp4/file.mp4" 
+          type="video/mp4"
+          />
         </video>
         </div>
       <p>
@@ -42,7 +45,7 @@ const ProjectTheClassicValuer = () => (
       <p> 
         The Classic Valuer has historical price data for over <span className={classes.Highlighted}>50,000 car listings</span>, 
         over <span className={classes.Highlighted}>3,000 unique models</span>, 
-        with a total value of over <span className={classes.Highlighted}>$4,000,000,000</span>
+        with a total value of over <span className={classes.Highlighted}>£4,000,000,000</span>
       </p>
     </div>
   </div>  
