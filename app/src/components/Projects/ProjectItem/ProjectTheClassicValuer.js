@@ -3,7 +3,7 @@ import classes from './ProjectItem.module.css'
 import WebIcon from '../Icons/WebIcon'
 import Tags from '../Icons/Tags'
 
-const projectItem = () => (
+const ProjectTheClassicValuer = () => (
   <div className={classes.ProjectItemWrapper}>
     <div className={classes.ProjectItem}>
       <p className={`${classes.Heading} ${classes.Center}`}> The Classic Valuer </p>
@@ -48,4 +48,4 @@ const projectItem = () => (
   </div>  
 );
 
-export default projectItem
+export default ProjectTheClassicValuer
