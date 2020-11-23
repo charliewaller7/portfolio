@@ -33,13 +33,13 @@ const ProjectTheClassicValuer = () => (
         </video>
         </div>
       <p>
-        The data ingestion backend is written in Python, using the <a href="https://scrapy.org/" className={classes.Link}>
-        Scrapy</a> Web Scraping framework, combined with <a href="https://www.selenium.dev/" className={classes.Link}>
+        The data ingestion backend is written in Python, using the <a href="https://scrapy.org/" className={classes.Link} target="_blank" rel="noreferrer">
+        Scrapy</a> Web Scraping framework, combined with <a href="https://www.selenium.dev/" className={classes.Link} target="_blank" rel="noreferrer">
         Selenium</a> and custom middleware modules.
       </p>
       <p>
-        The Classic Valuer stack also includes use of <a href="https://www.docker.com/" className={classes.Link}>Docker</a> for deployment, 
-        and <a href="https://aws.amazon.com/dynamodb/" className={classes.Link}>AWS DynamoDB</a> for a highly available data store.
+        The Classic Valuer stack also includes use of <a href="https://www.docker.com/" className={classes.Link} target="_blank" rel="noreferrer">Docker</a> for deployment, 
+        and <a href="https://aws.amazon.com/dynamodb/" className={classes.Link} target="_blank" rel="noreferrer">AWS DynamoDB</a> for a highly available data store.
       </p>
       <h2> Stats </h2>
       <p> 
