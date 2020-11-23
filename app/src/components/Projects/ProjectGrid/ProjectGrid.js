@@ -12,6 +12,4 @@ const ProjectGrid = () => (
 </div>
 );
 
-
-
 export default ProjectGrid
