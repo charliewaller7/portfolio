@@ -4,8 +4,8 @@ import WebIcon from '../Icons/WebIcon'
 import Tags from '../Icons/Tags'
 import tcvImage from '../../../assets/images/projects/tcv_1.png'
 
-const ProjectTheClassicValuer = () => (
-  <div className={classes.ProjectItemWrapper}>
+const ProjectTheClassicValuer = props => (
+  <div className={classes.ProjectItemWrapper} id={props.id}>
     <div className={classes.ProjectItem}>
       <p className={`${classes.Heading} ${classes.Center}`}> The Classic Valuer </p>
       <span className={classes.Center}>
