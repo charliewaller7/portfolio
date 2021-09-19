@@ -1,6 +1,7 @@
 import React from 'react';
 import classes from './Projects.module.css'
 import ProjectTheClassicValuer from './ProjectItem/ProjectTheClassicValuer'
+import ProjectLinkHub from './ProjectItem/ProjectLinkHub'
 import ProjectGrid from './ProjectGrid/ProjectGrid'
 import PageBreak from './PageBreak/PageBreak'
 
@@ -11,7 +12,8 @@ const Projects = () => (
     <p className={classes.Subheading}> A collection of personal data science & software development projects</p>
       <ProjectGrid/>
       <PageBreak/>
-      <ProjectTheClassicValuer/>
+      <ProjectTheClassicValuer id="projectTheClassicValuer"/>
+      <ProjectLinkHub id="projectLinkHub"/>
   </div>
 )
 
