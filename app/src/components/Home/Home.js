@@ -4,6 +4,7 @@ import projectClasses from '../../App.module.css'
 
 import Aux from '../../hoc/Aux'
 import Typer from '../../containers/Typer/Typer'
+import Cv from '../../assets/files/cv.pdf'
 
 const Home = () => {
 
@@ -25,6 +26,10 @@ const Home = () => {
         className={`${classes.Subheading} ${classes.FadeIn} ${projectClasses.Clickable}`}
         onClick={executeScroll}> projects
         </p>
+        <a
+            className={`${classes.Subheading} ${classes.FadeIn} ${projectClasses.Clickable}`}
+            href={ Cv } target="_blank"> cv
+        </a>
         </div>
       </div>
     </Aux>
